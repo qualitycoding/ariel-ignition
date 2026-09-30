@@ -1,0 +1,10 @@
+Loaded 242 .text at address 0x0
+Loaded 0 .data
+PB1=0 at 0.002 ms
+PB0 rise at 10.000 ms
+PB1=1 at 10.005 ms
+PB1=0 at 11.000 ms
+PB0 fall at 20.000 ms
+PB1=1 at 20.005 ms
+PB1=0 at 21.000 ms
+rc=0

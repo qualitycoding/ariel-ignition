@@ -1,0 +1,779 @@
+[
+ {
+  "id": "C-001",
+  "claim": "Ariel NH 350 Red Hunter: bore x stroke 72 x 85 mm (347 cc).",
+  "kind": "bibliographic",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://cybermotorcycle.com/gallery/ariel-1939/Ariel-1939-NH-350cc-Red-Hunter-Cat.htm",
+    "doi": "",
+    "title": "Ariel 1939 NH brochure scan",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-012",
+   "C-006"
+  ]
+ },
+ {
+  "id": "C-002",
+  "claim": "Ariel 350 full-advance ignition timing is about 1/2 in (7/16-1/2 in) piston travel BTDC.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.britbike.com/forums/ubbthreads.php/topics/871475/treforissa",
+    "doi": "",
+    "title": "Britbike forum quoting Nicholson 7th ed.",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   },
+   {
+    "url": "https://messageboard.hitchcocksmotorcycles.com/viewtopic.php?p=88265",
+    "doi": "",
+    "title": "Hitchcocks forum, 1957 350",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-012",
+   "A-011",
+   "G-004"
+  ]
+ },
+ {
+  "id": "C-003",
+  "claim": "A magneto on a four-stroke single runs at half engine speed; a single-cylinder magneto has one cam lobe.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://motorsportmagazine.com/archive/article/april-1938/22/for-high-efficiency-sports-and-racing-cars",
+    "doi": "",
+    "title": "Motor Sport 1938, Lucas camshaft-speed magneto",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   },
+   {
+    "url": "https://www.nortonownersclub.org/node/15449",
+    "doi": "",
+    "title": "Norton Owners Club forum",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-021",
+   "A-009"
+  ]
+ },
+ {
+  "id": "C-004",
+  "claim": "A magneto gives its strongest spark near full advance; retarding the break weakens it.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://forum.arielownersmcc.com/viewtopic.php?p=6763",
+    "doi": "",
+    "title": "Ariel Owners MCC forum",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-022",
+   "S-020"
+  ]
+ },
+ {
+  "id": "C-005",
+  "claim": "A retarded spark reduces the risk of kickback when kick-starting.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://forum.arielownersmcc.com/viewtopic.php?p=6763",
+    "doi": "",
+    "title": "Ariel Owners MCC forum",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   },
+   {
+    "url": "https://www.nortonownersclub.org/node/7769",
+    "doi": "",
+    "title": "Norton Owners Club forum (low-voltage advance causes kickback)",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-004",
+   "D-018",
+   "T-202"
+  ]
+ },
+ {
+  "id": "C-006",
+  "claim": "1/2 in BTDC = 40.4-41.6 deg crank and 7/16 in = 37.6-38.7 deg for rod lengths 150-200 mm (stroke 85 mm).",
+  "kind": "numerical",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "research/spikes/timing-reference/ref.py",
+    "doi": "",
+    "title": "spike",
+    "version": "",
+    "locator": "output.txt",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "verified",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-012",
+   "T-007"
+  ]
+ },
+ {
+  "id": "C-010",
+  "claim": "Allegro A1120: unipolar Hall switch, 3-24 V, -40..150 C, open drain 25 mA, 25 us response, AEC-Q100.",
+  "kind": "software",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://cdn.components.ru/media/PDF/8068037.pdf",
+    "doi": "",
+    "title": "Allegro A112x datasheet",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   },
+   {
+    "url": "https://se.rs-online.com/web/p/motion-sensor-ics/7244664P",
+    "doi": "",
+    "title": "RS Components listing",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "corroborated",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-004"
+  ]
+ },
+ {
+  "id": "C-011",
+  "claim": "Allegro A1220 latch: south pole turns the open-drain output on, north turns it off; 3-24 V; AEC-Q100; reverse-battery protection; 25 us.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.electronicsdatasheets.com/download/113021.pdf?format=pdf",
+    "doi": "",
+    "title": "Allegro A1220 datasheet",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   },
+   {
+    "url": "https://uk.rs-online.com/web/p/motion-sensor-ics/1709094",
+    "doi": "",
+    "title": "RS Components UK",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "corroborated",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-004",
+   "D-015",
+   "T-202"
+  ]
+ },
+ {
+  "id": "C-012",
+  "claim": "onsemi ISL9V3040: logic-level ignition IGBT, 400 V clamp, 300 mJ SCIS, 21 A at VGE 4 V, VGE max 10 V.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.onsemi.com/download/data-sheet/pdf/isl9v3040-f085c-d.pdf",
+    "doi": "",
+    "title": "onsemi datasheet Rev 3 Jan 2026",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   },
+   {
+    "url": "https://il.farnell.com/on-semiconductor/isl9v3040p3/igbt-single-400v-21a-to-220ab/dp/2454178",
+    "doi": "",
+    "title": "Farnell",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "corroborated",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-005"
+  ]
+ },
+ {
+  "id": "C-013",
+  "claim": "onsemi FGD3040G2-F085V: 400 V, 300 mJ, logic-level ignition IGBT (datasheet Rev 4, May 2025).",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://static6.arrow.com/aropdfconversion/420c9d74915856f37c649337c30e7fed24b79238/fgd3040g2f085vd.pdf",
+    "doi": "",
+    "title": "onsemi datasheet via Arrow",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   },
+   {
+    "url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2103311436_onsemi-FGD3040G2-F085V_C605138.pdf",
+    "doi": "",
+    "title": "onsemi datasheet via LCSC",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "corroborated",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-005"
+  ]
+ },
+ {
+  "id": "C-014",
+  "claim": "FGB3040G2 turn-off delay about 4.8 us.",
+  "kind": "software",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://www.cytechsystems.com.cn/de/product/fgb3040g2-f085c",
+    "doi": "",
+    "title": "distributor listing",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-015"
+  ]
+ },
+ {
+  "id": "C-015",
+  "claim": "onsemi FGBS3040E1-F085 (smart driver with soft shutdown) is Obsolete.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.onsemi.com/products/discrete-power-modules/igbts/fgbs3040_f085",
+    "doi": "",
+    "title": "onsemi product page",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   },
+   {
+    "url": "https://www.onsemi.com/pdf/datasheet/fgbs3040_f085-d.pdf",
+    "doi": "",
+    "title": "onsemi datasheet (SSD function)",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "corroborated",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-005",
+   "D-019"
+  ]
+ },
+ {
+  "id": "C-016",
+  "claim": "Battery-less running on a capacitor with electronic ignition is marginal at kick: supply sags when the coil is connected; some ignitions advance at low voltage and kick back.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.nortonownersclub.org/node/7769",
+    "doi": "",
+    "title": "Norton Owners Club",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   },
+   {
+    "url": "https://www.accessnorton.com/NortonCommando/boyer-and-power-box.14581",
+    "doi": "",
+    "title": "Access Norton",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   },
+   {
+    "url": "https://messageboard.hitchcocksmotorcycles.com/viewtopic.php?p=54727",
+    "doi": "",
+    "title": "Hitchcocks",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-002",
+   "D-018",
+   "T-209"
+  ]
+ },
+ {
+  "id": "C-017",
+  "claim": "An unregulated 6 V PM alternator without a battery can peak above 200 V.",
+  "kind": "software",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://www.britishbikebits.com/?p=249983",
+    "doi": "",
+    "title": "Boyer Power Box product text",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-002"
+  ]
+ },
+ {
+  "id": "C-018",
+  "claim": "BTH electronic magnetos are self-generating (battery-less); owners report one-kick starting and mixed reliability.",
+  "kind": "software",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://www.accessnorton.com/NortonCommando/magneto-questions.38807",
+    "doi": "",
+    "title": "Access Norton",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   },
+   {
+    "url": "https://messageboard.hitchcocksmotorcycles.com/viewtopic.php?p=2434",
+    "doi": "",
+    "title": "Hitchcocks",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-002"
+  ]
+ },
+ {
+  "id": "C-019",
+  "claim": "A Lucas magneto's cut-out (LT earth) terminal connects to the primary; earthing it stops the engine.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.vincentownersclub.co.uk/threads/how-to-kill-a-lucas-kvf-magneto.9678/",
+    "doi": "",
+    "title": "Vincent Owners Club",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   },
+   {
+    "url": "https://www.jampot.com/article_print.asp?id=8",
+    "doi": "",
+    "title": "AJS/Matchless club SR1 article",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-016",
+   "D-021",
+   "WIRING.md"
+  ]
+ },
+ {
+  "id": "C-020",
+  "claim": "CRC-16/CCITT-FALSE check values: 0x29B1 for '123456789', 0xFFFF for empty, 0xB915 for 'A'.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "research/spikes/crc-check/crc.py",
+    "doi": "",
+    "title": "spike",
+    "version": "",
+    "locator": "output.txt",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "verified",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-011",
+   "T-001"
+  ]
+ },
+ {
+  "id": "C-021",
+  "claim": "Using the valve lifter to stop an engine is poor practice; a cut-out button is preferred.",
+  "kind": "software",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://www.vincentownersclub.co.uk/threads/how-to-kill-a-lucas-kvf-magneto.9678/",
+    "doi": "",
+    "title": "Vincent Owners Club",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "A-004"
+  ]
+ },
+ {
+  "id": "C-022",
+  "claim": "Earth polarity varies by machine; Lucas dynamos can be repolarised; electronic dynamo regulators are polarity-specific (DVR2P/DVR2N).",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.marston-sunbeam.org/sunbeamForum/index.php?msg=2479",
+    "doi": "",
+    "title": "Sunbeam forum quoting the regulator maker",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   },
+   {
+    "url": "https://www.ebay.de/itm/205545162717",
+    "doi": "",
+    "title": "DVR2N listing (maker)",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-021",
+   "S-003"
+  ]
+ },
+ {
+  "id": "C-023",
+  "claim": "ATmega328P speed grade: 0-10 MHz at 2.7-5.5 V (automotive grade: 0-8 MHz at 2.7-5.5 V).",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://fab.cba.mit.edu/classes/863.17/EECS/people/akaspar/project/atmega328p-datasheet.pdf",
+    "doi": "",
+    "title": "Atmel ATmega328/P datasheet 42735B",
+    "version": "",
+    "locator": "p.1 Speed Grade",
+    "accessed": "2026-09-30",
+    "tier": 1
+   },
+   {
+    "url": "https://www.logosfoundation.org/instrum_gwr/Arduino/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf",
+    "doi": "",
+    "title": "Atmel 7810D automotive datasheet",
+    "version": "",
+    "locator": "p.1",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "corroborated",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-003"
+  ]
+ },
+ {
+  "id": "C-024",
+  "claim": "ATmega328P fuse bit positions (CKDIV8 bit7, SUT 5:4, CKSEL 3:0; BOOTRST bit0, EESAVE bit3, SPIEN bit5; BODLEVEL 2:0) per avr-libc iom328p.h; BODLEVEL=101 selects 2.7 V (not yet sourced).",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "file:///usr/lib/avr/include/avr/iom328p.h",
+    "doi": "",
+    "title": "avr-libc 2.0.0 header",
+    "version": "",
+    "locator": "lines 898-923",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-015",
+   "B-402"
+  ]
+ },
+ {
+  "id": "C-025",
+  "claim": "TI LM2936: 5.5-40 V operating, 50 mA, 200 mV typ dropout, -24 V reverse, -50 V transient, output capacitor ESR critical; LM2936HV to 60 V.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://www.lcsc.com/product-detail/C91309.html",
+    "doi": "",
+    "title": "TI LM2936 datasheet summary",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   },
+   {
+    "url": "https://html.alldatasheet.net/html-pdf/749530/TI/LM2936_15/26/1/LM2936_15.html",
+    "doi": "",
+    "title": "TI SNOSC48O",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "corroborated",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-003",
+   "WIRING.md"
+  ]
+ },
+ {
+  "id": "C-030",
+  "claim": "simavr 1.6 models ATmega328P Timer1 input capture on PB0 and OC1A clear-on-compare on PB1 at 1 us resolution.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "research/spikes/simavr-icp/",
+    "doi": "",
+    "title": "spike",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "verified",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-020",
+   "T-202..T-222"
+  ]
+ },
+ {
+  "id": "C-031",
+  "claim": "simavr 1.6 models ADC6 with the internal 1.1 V reference (550 mV reads 511).",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "research/spikes/simavr-adc/",
+    "doi": "",
+    "title": "spike",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "verified",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-020",
+   "T-209"
+  ]
+ },
+ {
+  "id": "C-032",
+  "claim": "Vendored Unity files are byte-identical to ThrowTheSwitch/Unity tag v2.6.0.",
+  "kind": "software",
+  "load_bearing": true,
+  "sources": [
+   {
+    "url": "https://github.com/ThrowTheSwitch/Unity/tree/v2.6.0",
+    "doi": "",
+    "title": "upstream tag",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 1
+   }
+  ],
+  "confidence": "verified",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "ENVIRONMENT.md"
+  ]
+ },
+ {
+  "id": "C-033",
+  "claim": "Red Hunter layout places the magneto behind the cylinder.",
+  "kind": "bibliographic",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://nationalmcmuseum.org/?p=15264",
+    "doi": "",
+    "title": "National Motorcycle Museum",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 3
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "A-001"
+  ]
+ },
+ {
+  "id": "C-034",
+  "claim": "Some 1950s Ariel 350s have an automatic advance unit on the magneto drive.",
+  "kind": "software",
+  "load_bearing": false,
+  "sources": [
+   {
+    "url": "https://messageboard.hitchcocksmotorcycles.com/viewtopic.php?p=88265",
+    "doi": "",
+    "title": "Hitchcocks forum",
+    "version": "",
+    "locator": "",
+    "accessed": "2026-09-30",
+    "tier": 4
+   }
+  ],
+  "confidence": "single-source",
+  "evidence_class": "n/a",
+  "contradicted_by": [],
+  "informs": [
+   "D-021"
+  ]
+ }
+]

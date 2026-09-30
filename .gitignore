@@ -1,0 +1,4 @@
+build/
+firmware/build/
+research/spikes/**/*.elf
+research/spikes/**/h
