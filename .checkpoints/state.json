@@ -8,7 +8,7 @@
   "software.deploys": true
  },
  "phase": "5",
- "subphase": "5.3",
+ "subphase": "5.4",
  "research_round": 3,
  "exploration_round": 0,
  "proof_review_round": 0,
@@ -31,11 +31,10 @@
   "4.1",
   "4.2",
   "5.1",
-  "5.2"
- ],
- "pending": [
+  "5.2",
   "5.3 push"
  ],
+ "pending": [],
  "not_applicable": [
   "2A",
   "2C",
@@ -118,15 +117,13 @@
  "tier_substitutions": [
   "No sub-agent spawning available: all tiers (Haiku/Sonnet/Opus/Fable) executed by the single planning agent; R5 adversarial pass, 3.6 cold read and Phase 4 pre-mortem were not fresh-context (A-013, R-010)"
  ],
- "open_items": [
-  "GitHub push credential absent (A-008): delivery by git bundle"
- ],
+ "open_items": [],
  "environment": {
   "subagents": false,
   "github_read": true,
-  "github_push": false,
+  "github_push": true,
   "sandbox_exec": true,
   "network": "allow-listed domains + web search tool"
  },
- "updated_at": "2026-09-30T13:27:09Z"
+ "updated_at": "2026-09-30T15:11:27Z"
 }
