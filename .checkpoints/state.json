@@ -7,12 +7,12 @@
  "mode_flags": {
   "software.deploys": true
  },
- "phase": "3",
- "subphase": "3.6",
+ "phase": "4",
+ "subphase": "4.5",
  "research_round": 3,
  "exploration_round": 0,
  "proof_review_round": 0,
- "premortem_round": 0,
+ "premortem_round": 2,
  "completed": [
   "0.1",
   "0.3",
@@ -27,10 +27,11 @@
   "3.3",
   "3.4",
   "3.5",
-  "3.6"
+  "3.6",
+  "4.1",
+  "4.2"
  ],
  "pending": [
-  "4",
   "5"
  ],
  "not_applicable": [
@@ -45,9 +46,6 @@
   "research/NOVELTY.md"
  ],
  "artifacts": {
-  "premortem/RISK_REGISTER.md": "df2e1f5402af1923cd668a66b4c04db033dda892162ffa2d86a9fb10f31d3623",
-  "premortem/round-1.md": "571ce1b368c07822db45438ce57580a37dec2d87333f45b98d83ead93a3ab075",
-  "premortem/round-2.md": "ff7b0e4125b07633253b1a1df7eafce9ca76a594d21c8d1494791e5c0d96116d",
   ".gitignore": "cefc9e7b5955e65877f6e10d5e296546f80c976a94883d2708f16350cb6f9bdf",
   "HANDOFF.md": "e17a7ace7c24a846c00f76e8df09529e3e28bbcce9d2abe33997a90a8b9bf137",
   "Makefile": "1764a22d7d8eddca9889c24a90b8f690dc880609dab2066d8f2d4db81a748349",
@@ -78,6 +76,9 @@
   "plan/PLAN.md": "51cbd6d15b26aab63471a4c88f4db0b207d08517dfbc5b599e0becc1868ccea2",
   "plan/PROFILE.md": "4bbdd81e147a62d2f480b8f90ffd51834fe079f4c118e9d5882b8667b977bbc0",
   "plan/TRACEABILITY.md": "20d82041a41655edfa4926ff5d5989641bee1e0432bc3593d73643d328617c90",
+  "premortem/RISK_REGISTER.md": "df2e1f5402af1923cd668a66b4c04db033dda892162ffa2d86a9fb10f31d3623",
+  "premortem/round-1.md": "571ce1b368c07822db45438ce57580a37dec2d87333f45b98d83ead93a3ab075",
+  "premortem/round-2.md": "ff7b0e4125b07633253b1a1df7eafce9ca76a594d21c8d1494791e5c0d96116d",
   "research/QUESTIONS.md": "d19709bfbcd6c322418ff811670c55d81362ee5033809ceef16baeac7f8a2e79",
   "research/SOURCES.md": "fbbffb0a6a237daeedfe510de864aff9ec062daa05054958fd801810dbf3ca44",
   "research/claims.json": "2ad5d5c8cc349afd09bcbfb1e605f9a48555f0d3cbf9f70cf5493039a7678650",
