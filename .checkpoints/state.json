@@ -125,5 +125,35 @@
   "sandbox_exec": true,
   "network": "allow-listed domains + web search tool"
  },
- "updated_at": "2026-09-30T15:11:27Z"
+ "updated_at": "2026-09-30T15:11:27Z",
+ "implementation": {
+  "requested_by_user": true,
+  "done": [
+   "S-001",
+   "S-011",
+   "S-012",
+   "S-013",
+   "S-014",
+   "S-015",
+   "S-016",
+   "S-017",
+   "S-018",
+   "S-019"
+  ],
+  "not_done_human": [
+   "S-002..S-010",
+   "S-020..S-023"
+  ],
+  "gates_open": [
+   "G-002",
+   "G-003",
+   "G-004",
+   "G-006"
+  ],
+  "tests": "31/31 green x3 clean runs; make verify-freeze OK",
+  "deviations": [
+   "DEV-001",
+   "DEV-002"
+  ]
+ }
 }

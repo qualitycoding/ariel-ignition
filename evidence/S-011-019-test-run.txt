@@ -1,0 +1,106 @@
+gcc -std=c11 -Wall -Wextra -Werror -O1 -DHOST_BUILD -DDEFAULT_VARIANT_TCI -Ifirmware/include -Ivendor/unity -o build/host/test_crc16 tests/unit/test_crc16.c firmware/src/crc16.c firmware/src/config.c firmware/src/timing.c firmware/src/cli.c vendor/unity/unity.c
+gcc -std=c11 -Wall -Wextra -Werror -O1 -DHOST_BUILD -DDEFAULT_VARIANT_TCI -Ifirmware/include -Ivendor/unity -o build/host/test_config tests/unit/test_config.c firmware/src/crc16.c firmware/src/config.c firmware/src/timing.c firmware/src/cli.c vendor/unity/unity.c
+gcc -std=c11 -Wall -Wextra -Werror -O1 -DHOST_BUILD -DDEFAULT_VARIANT_TCI -Ifirmware/include -Ivendor/unity -o build/host/test_timing tests/unit/test_timing.c firmware/src/crc16.c firmware/src/config.c firmware/src/timing.c firmware/src/cli.c vendor/unity/unity.c
+gcc -std=c11 -Wall -Wextra -Werror -O1 -DHOST_BUILD -DDEFAULT_VARIANT_TCI -Ifirmware/include -Ivendor/unity -o build/host/test_cli tests/unit/test_cli.c firmware/src/crc16.c firmware/src/config.c firmware/src/timing.c firmware/src/cli.c vendor/unity/unity.c
+== test_crc16
+tests/unit/test_crc16.c:12:t001_check_value:PASS
+tests/unit/test_crc16.c:12:t001_empty_is_init:PASS
+tests/unit/test_crc16.c:12:t001_single_byte:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK
+== test_config
+tests/unit/test_config.c:135:t002_defaults_table:PASS
+tests/unit/test_config.c:135:t003_validation_rules:PASS
+tests/unit/test_config.c:135:t004_image_loading:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK
+== test_timing
+tests/unit/test_timing.c:98:t005_rpm_from_period:PASS
+tests/unit/test_timing.c:98:t006_angle_to_us:PASS
+tests/unit/test_timing.c:99:t007_curve_lookup:PASS
+tests/unit/test_timing.c:99:t008_effective_advance:PASS
+tests/unit/test_timing.c:99:t009_spark_delays:PASS
+tests/unit/test_timing.c:100:t010_dwell_for_vbat:PASS
+
+-----------------------
+6 Tests 0 Failures 0 Ignored 
+OK
+== test_cli
+tests/unit/test_cli.c:138:t011_set_get_keys:PASS
+tests/unit/test_cli.c:138:t012_tables:PASS
+tests/unit/test_cli.c:138:t013_busy_rule:PASS
+tests/unit/test_cli.c:139:t014_save_and_defaults:PASS
+tests/unit/test_cli.c:139:t015_malformed:PASS
+tests/unit/test_cli.c:139:t016_fuzz:PASS
+
+-----------------------
+6 Tests 0 Failures 0 Ignored 
+OK
+make -C firmware VARIANT=TCI
+make[2]: Nothing to be done for 'all'.
+make -C firmware VARIANT=MAGBREAK
+make[2]: Nothing to be done for 'all'.
+gcc -std=gnu11 -O1 -Wall -DUNITY_INCLUDE_DOUBLE -Ivendor/unity -I/usr/include/simavr -I/usr/include/simavr/avr -o build/host/sim_tci tests/sim/test_sim_tci.c tests/sim/harness.c vendor/unity/unity.c -lsimavr -lelf
+gcc -std=gnu11 -O1 -Wall -DUNITY_INCLUDE_DOUBLE -Ivendor/unity -I/usr/include/simavr -I/usr/include/simavr/avr -o build/host/sim_mag tests/sim/test_sim_magbreak.c tests/sim/harness.c vendor/unity/unity.c -lsimavr -lelf
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:163:t202_first_kick_fires_at_tdc:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:163:t203_stalled_kick_soft_off:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:163:t204_boot_inside_window:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:164:t205_advance_3000:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:164:t206_advance_5500:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:164:t207_rev_limiter:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:165:t208_kill_switch:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:165:t209_low_voltage_limp:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:165:t210_stall_while_running:PASS
+Loaded 11442 .text at address 0x0
+Loaded 496 .data
+tests/sim/test_sim_tci.c:166:t211_map_switch:PASS
+
+-----------------------
+10 Tests 0 Failures 0 Ignored 
+OK
+Loaded 10698 .text at address 0x0
+Loaded 490 .data
+tests/sim/test_sim_magbreak.c:58:t220_first_kick:PASS
+Loaded 10698 .text at address 0x0
+Loaded 490 .data
+tests/sim/test_sim_magbreak.c:58:t221_running:PASS
+Loaded 10698 .text at address 0x0
+Loaded 490 .data
+tests/sim/test_sim_magbreak.c:58:t222_kill_holds_closed:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK
+make -C firmware VARIANT=TCI
+make[2]: Nothing to be done for 'all'.
+make -C firmware VARIANT=MAGBREAK
+make[2]: Nothing to be done for 'all'.
+flash=11938 ram=869
+T-301/T-302 PASS
+flash=11188 ram=863
+T-301/T-302 PASS
+exit=0

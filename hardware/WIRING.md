@@ -52,7 +52,7 @@ VIN_F ── U1 LM2936MP-5.0 IN ; U1 OUT ── +5V ── C3 22µF + 100nF ─�
 IGN+ (before D1) ── R2 68k ── VSENSE ── R3 4k7 ── GND ; VSENSE ── C4 100nF ── GND ; VSENSE ── A6
 PB1 (D9) ── R6 220Ω ── GATE ; GATE ── R7 470k ── PGND ; GATE ── C7 10nF ── PGND ; GATE ── Q1 gate
 PD2 (D2) ── R9 1k ── KILL ; KILL ── R8 10k ── +5V ; KILL ── C8 100nF ── GND ; KILL ── SW2 (N/O push) ── GND
-PD3 (D3) ── SW3 (map toggle, optional) ── GND
+PD3 (D3) ── R10 10k ── +5V ; PD3 ── SW3 (map toggle, optional) ── GND   (external pull-up: DEV-001)
 PD0/PD1/GND ── J2 tuning connector (FTDI 5 V TTL: GND, RX←TX, TX→RX)
 Pro Mini ISP pads (MOSI D11, MISO D12, SCK D13, RST, VCC, GND) ── J3 6-pin ISP (flashing only)
 GND (signal) joins PGND at ONE point: Q1 emitter pad.

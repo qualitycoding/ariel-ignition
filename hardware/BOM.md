@@ -71,6 +71,7 @@ is supported with no hardware change to the controller.
 | R4, R5 | 1+1 | 4.7 kΩ, 1 kΩ | trigger pull-up / series | £ |
 | R6, R7 | 1+1 | 220 Ω, 470 kΩ | gate network | £ |
 | R8, R9 | 1+1 | 10 kΩ, 1 kΩ | kill input | £ |
+| R10 | 1 | 10 kΩ | map-select pull-up (DEV-001) | £ |
 | C1 | 1 | 100 µF 35 V low-ESR electrolytic | | £ |
 | C2, C4, C6, C8 | 4 | 100 nF X7R | | £ |
 | C3 | 1 | 22 µF 16 V (LDO output, ESR per LM2936 datasheet) | | £ |

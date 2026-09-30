@@ -1,0 +1,14 @@
+S-018 build evidence 2026-09-30T18:22:53Z
+toolchain: avr-gcc (GCC) 7.3.0
+
+== TCI
+   text	   data	    bss	    dec	    hex	filename
+  11442	    496	    373	  12311	   3017	firmware/build/TCI/ariel_ign.elf
+7a73f23bd49e9b1d2d244fc626b7fee11c1fbacec94e599b4fe9dda02424fb96  firmware/build/TCI/ariel_ign.hex
+
+== MAGBREAK
+   text	   data	    bss	    dec	    hex	filename
+  10698	    490	    373	  11561	   2d29	firmware/build/MAGBREAK/ariel_ign.elf
+f4945e1b25963acc727ecc986542ad062e9be617c03c10a5d20fa2a504cf5c36  firmware/build/MAGBREAK/ariel_ign.hex
+
+limits: flash 30720 (bootloader-less 32768), RAM 2048; budget RAM<=1536

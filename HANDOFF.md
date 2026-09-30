@@ -52,3 +52,9 @@ allowed responses.
 
 **Operations:** installation, first start, monitoring (`status`, LED), tuning,
 stopping and rollback to the magneto: plan/OPERATIONS.md.
+
+## Implementation status (firmware steps done at the user's explicit request)
+Done: S-001, S-011..S-019 (firmware, both variants, bench trigger simulator). 31/31 automated tests green,
+frozen files unchanged. See DEVIATIONS.md (DEV-001 external R10 on PD3; DEV-002 wrap-safe clock), evidence/.
+NOT done (need the owner / hardware): S-002..S-010 (bike survey, build), S-020..S-023 (bench, MAGBREAK spike,
+install, first start) and gates G-002/G-003/G-004/G-006. Nothing here has run on real hardware.

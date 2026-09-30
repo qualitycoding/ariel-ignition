@@ -1,0 +1,6 @@
+SPDX-License-Identifier: CERN-OHL-P-2.0
+
+Hardware documentation in this directory (wiring, BOM, drawings) is licensed under the
+CERN Open Hardware Licence Version 2 - Permissive. Full text: https://ohwr.org/cern_ohl_p_v2.txt
+TODO(owner): replace this pointer with the verbatim licence text before publishing a release;
+it could not be fetched offline in the implementation session.
