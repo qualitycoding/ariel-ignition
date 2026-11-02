@@ -1,5 +1,7 @@
 # HANDOFF — Ariel 350 electronic ignition
 
+
+Reading order: `HANDOFF.md` → `ADDENDUM-PLAN-V3.9.md` → `plan/PLAN.md`. Later protocol amendments take precedence only where the gap ledger says so.
 **Purpose.** Build a compact, programmable electronic ignition for a magneto-fired
 Ariel NH 350 single, in two variants: **TCI** (battery) and **MAGBREAK**
 (battery-less, retained magneto, gated). The branch contains the frozen tests,

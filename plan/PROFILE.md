@@ -8,3 +8,7 @@
 | publication | no | no paper |
 Consequences: G-001 N/A; OPERATIONS.md required; security tests (CLI input) and
 dependency scan (vendor hashes) required; no computational reproducibility gate.
+
+## v3.9 addendum profile confirmation
+
+Active profiles unchanged; `software` active; `software.deploys` unchanged. Target protocol v3.9.
