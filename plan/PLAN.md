@@ -1,3 +1,5 @@
+# PLAN — protocol v3.9 (upgraded by ADDENDUM-PLAN-V3.9.md)
+
 STATUS: READY — profiles: software (software.deploys=true). Claims: 5 verified, 7 corroborated, 15 single-source (8 load-bearing, all carried as risks with on-bike/bench checks), 0 inferred. Tests: 14 unit (T-001…T-014, incl. operational T-004), 2 security (T-015, T-016), 11 integration/firmware-in-the-loop (T-202…T-211 excl. T-205/T-206, T-220…T-222), 3 performance (T-205, T-206, T-301), 1 structure (T-302), 13 bench/deployment (B-401…B-413). Steps: 24. Gates: 4 (G-002, G-003, G-004, G-006; G-001 N/A). Risks: 0 Critical, 0 High, 13 Medium, 9 Low.
 Generation branch: gen-20260930T084855Z-ariel-electronic-ignition
 
@@ -431,3 +433,12 @@ complete without the recorded measurements named in "Evidence produced".
 - On failure: — Rollback: `git revert`.
 - Gate: none
 - Relevant decisions/claims: D-026
+
+
+## Amendment closing/review steps (v3.9)
+
+- **S-000** — Intake and environment probe (recorded at plan intake).
+- **S-REVIEW** — Traditional code review before packaging/release.
+- **S-ADVERSARIAL** — Adversarial review of security/correctness claims.
+- **S-RETRO** — Retrospective: review execution log, deviations and gate records.
+- **S-KNOW** — Knowledge/lessons: record classified lessons and knowledge items; G-003 controls publication to the Lessons and knowledge stores.
