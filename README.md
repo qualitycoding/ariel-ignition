@@ -4,9 +4,11 @@ A small, programmable electronic ignition for a magneto-fired Ariel NH (Red Hunt
 350 single. It keeps the magneto body in place, so the magdyno still drives the
 dynamo and the original parts can go back on in under 30 minutes.
 
-> **Status: plan and frozen tests only.** The firmware functions are stubs; the
-> step-by-step implementation plan is in `plan/PLAN.md` and starts with `HANDOFF.md`.
-> Nothing has been fitted to a motorcycle yet.
+> **Status: firmware written and simulated; nothing built or fitted yet.** Both
+> variants (TCI and MAGBREAK) compile and pass the unit tests and the simulated
+> ATmega328P tests (`make test`; results in `evidence/`). The physical steps (parts,
+> bench test, installation, first start) have not been done, and nothing has been
+> fitted to a motorcycle. The step plan is in `plan/PLAN.md`; start with `HANDOFF.md`.
 
 ## How it works
 * A plastic disc with two small magnets replaces the contact-breaker plate on the
@@ -70,5 +72,5 @@ The coil makes more than 20 kV. Bench-test with a 7 mm spark gap
 rollback kit (`plan/OPERATIONS.md`).
 
 ## Licences
-Firmware and tools: Apache-2.0. Hardware files: CERN-OHL-P-2.0 (licence texts
-are added in step S-001). Unity test framework: MIT (`vendor/unity/LICENSE.txt`).
+Firmware and tools: Apache-2.0 (`LICENSE`). Hardware files: CERN-OHL-P-2.0
+(`hardware/LICENSE`). Unity test framework: MIT (`vendor/unity/LICENSE.txt`).
