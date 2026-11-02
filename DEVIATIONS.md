@@ -1,18 +1,20 @@
-# Deviations from the plan (implementation phase)
+# DEVIATIONS — v3.9 addendum amendment
 
-## DEV-001 — external pull-up on PD3 (map select); internal pull-ups on PD2/PD3 not used
-- **Plan:** PD3 map switch to GND with the ATmega internal pull-up (D-015 pin map).
-- **Found:** test T-211 grounds PD3 at t=0, before firmware init. simavr's pull-up model forces the pin
-  high when firmware enables the internal pull-up, discarding the earlier external low (spike: /tmp spike,
-  reproduced with a 10-line firmware). The frozen test and harness are unchanged.
-- **Change:** PD3 gets an external 10 k pull-up R10 to +5 V (like R8 on the kill line); firmware enables no
-  internal pull-up on PD2/PD3 (PD0/RX keeps its). Pin assignment is unchanged; only the pull-up source.
-- **Why acceptable:** external pull-ups are at least as robust on a noisy ignition harness; +1 resistor.
-- **Reversible:** re-enable PORTD bit 3 in hal.c if the simulator is fixed. Hardware change only.
-- **Residual:** motivated by a simulator artefact; the design is nonetheless sound on real hardware.
+**Repository:** `qualitycoding/ariel-ignition` — 2026-11-02.
 
-## DEV-002 — wrap-safe clock instead of overflow-counter clock
-- **Found:** with the original design (overflow ISR increments a high word), a Timer1 wrap that falls inside
-  the long capture ISR is lost when TIFR1 is written; the clock is then 65.5 ms low (T-221 failed).
-- **Change:** wraps are detected by comparing successive TCNT1 reads (1 ms tick + overflow ISR guarantee
-  reads); captured values are reconstructed as `now - age`. No plan interface affected.
+1. **Source-tip drift (D-901).** Planning source branch tip `db398831cf8dbaeb8bb2b990cc4a93daa6442c1e` is the
+   rollout phase's addendum publication commit, direct child of audited
+   `452ecea39985b9657c8edbf630fb475da3cc97e2`. Implementation branch descends from the tip; nothing newer was
+   overwritten.
+2. **Git transport unavailable (D-905).** `github.com:443` git transport is
+   blocked from this sandbox; all clone-equivalent reads used `codeload` and all
+   commits/pushes used the authenticated GitHub Git database API. Remote SHAs
+   were verified after every push via the refs API. The addendum's
+   push-and-verify cadence was preserved in substance.
+3. **No local build/test/mutation execution (D-905).** Estimates in
+   `reviews/MUTATION.md` and the CI matrix are marked as estimates pending the
+   first CI run; no unrun check is reported as passed.
+4. **No fresh-context reviewer (D-906).** Cold read and adversarial review
+   recorded as same-author substitutions with High risk, per S-ADD-090.
+5. **Learning-store push deferred.** G-003 destinations requested; pushes
+   await sign-off (do-not-push until then).
